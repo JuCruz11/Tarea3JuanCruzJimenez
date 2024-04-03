@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBarFlex</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border-radius: 12px;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      ul {
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      li {
+        display: flex;
+        justify-content: center;
+      }
+      .nav1 {
+        display: flex;
+        justify-content: start;
+      }
+      .nav2 {
+        display: flex;
+        justify-content: center;
+      }
+      .nav3 {
+        display: flex;
+        justify-content: end;
+      }
+      .nav4 {
+        display: flex;
+        justify-content: end;
+        
+      }
+
+      li a {
+        color: #ff0b0b;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .icon{
+        position: absolute;
+        left: 30px;
+        padding-top: 4px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav1">
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Services">Services</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="nav2">
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Services">Services</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="nav3">
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Services">Services</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="nav4">
+        <div class="icon">
+          <img 
+            src="./assets/images/huella.jpg"
+            alt="Icono"
+            width="40px"
+            height="40px"
+          />
+        </div>
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Services">Services</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
