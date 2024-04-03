@@ -1,23 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiniReproductor de Juan </title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniReproductor de Juan</title>
+  </head>
 
-<style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      display: grid;
+      gap: 1px;
+      width: 50vh;
+      height: 25vh;
+      grid-template-columns: 1fr 1fr;
+    }
+    .card {
+      width: 250px;
+      height: 250px;
+      padding: 3px;
+      background-color: rgba(0, 0, 0, 0.05);
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+    }
 
-</style>
-<body>
-    <div class="Imagen">
-        <img src="./assets/images/lafactoria.jpeg" alt="">
+    .border-radius-12 {
+      border-radius: 12px;
+    }
+    .card h1 {
+      font-size: 16px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    .column {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .button-flex {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card border-radius-12">
+        <img
+          class="card border-radius-12"
+          src="./assets/images/lafactoria.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="card border-radius-12 column">
+        <h1>LA FACTORIA-EXITOS</h1>
+        <p>
+          La Factoria Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Nisi?
+        </p>
+        <div class="button-flex">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-rewind-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7.729 5.055A.5.5 0 0 1 8 5.5v1.886l3.21-2.293A.5.5 0 0 1 12 5.5v5a.5.5 0 0 1-.79.407L8 8.614V10.5a.5.5 0 0 1-.79.407l-3.5-2.5a.5.5 0 0 1 0-.814l3.5-2.5a.5.5 0 0 1 .519-.038"
+              />
+            </svg>
+          </button>
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-pause-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5"
+              />
+            </svg>
+          </button>
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-fast-forward-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M4.79 5.093 8 7.386V5.5a.5.5 0 0 1 .79-.407l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 8 10.5V8.614l-3.21 2.293A.5.5 0 0 1 4 10.5v-5a.5.5 0 0 1 .79-.407"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
-    <h1>LA FACTORIA-EXITOS</h1>
-    <p>
-        La Factoria Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi?
-    </p>
-
-    
-</body>
+  </body>
 </html>
